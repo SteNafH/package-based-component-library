@@ -42,5 +42,10 @@
         "cacheableOperations": ["build-storybook"]
       }
     }
-  }
+  },
+    "pluginsConfig": {
+        "@nrwl/js": {
+            "analyzeSourceFiles": true
+        }
+    }
 }

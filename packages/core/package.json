@@ -8,5 +8,9 @@
   "dependencies": {
     "i18next": "^23.7.6",
     "react-i18next": "^13.5.0"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
   }
 }
