@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@stenafh/core": ["packages/core/src/index.ts"]
+      "@stenafh/core": ["packages/core/src/index.ts"],
+      "@stenafh/module1": ["packages/module1/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

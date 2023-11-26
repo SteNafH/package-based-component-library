@@ -20,6 +20,9 @@
     },
     "e2e": {
       "cache": true
+    },
+    "build-storybook": {
+      "cache": true
     }
   },
   "nxCloudAccessToken": "ZjVjODUxMTItZGMyNy00ODRlLWFkMTItMDYzYTBmZmM1NjJmfHJlYWQtd3JpdGU=",
@@ -30,6 +33,13 @@
       },
       "library": {
         "unitTestRunner": "none"
+      }
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "options": {
+        "cacheableOperations": ["build-storybook"]
       }
     }
   }
