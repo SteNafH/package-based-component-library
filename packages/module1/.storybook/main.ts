@@ -11,6 +11,13 @@ const config: StorybookConfig = {
     name: '@storybook/react-webpack5',
     options: {},
   },
+  babel: async options => {
+    if (!options.plugins) options.plugins = [];
+    options.plugins.push('babel-plugin-react-require');
+    if (!options.presets) options.presets = [];
+    options.presets.push('@emotion/babel-preset-css-prop');
+    return options;
+  },
 };
 
 export default config;
