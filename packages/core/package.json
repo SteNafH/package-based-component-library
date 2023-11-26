@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "peerDependencies": {
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "@emotion/react": "11.11.1",
-    "@emotion/styled": "11.11.0"
+    "react-dom": "18.2.0"
+  },
+  "dependencies": {
+    "i18next": "^23.7.6",
+    "react-i18next": "^13.5.0"
   }
 }
