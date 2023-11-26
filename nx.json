@@ -7,16 +7,30 @@
   "targetDefaults": {
     "build": {
       "cache": true,
-      "dependsOn": [
-        "^build"
-      ]
+      "dependsOn": ["^build"]
     },
     "lint": {
-      "cache": true
+      "cache": true,
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore",
+        "{workspaceRoot}/eslint.config.js"
+      ]
     },
     "e2e": {
       "cache": true
     }
   },
-  "nxCloudAccessToken": "ZjVjODUxMTItZGMyNy00ODRlLWFkMTItMDYzYTBmZmM1NjJmfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ZjVjODUxMTItZGMyNy00ODRlLWFkMTItMDYzYTBmZmM1NjJmfHJlYWQtd3JpdGU=",
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "babel": true
+      },
+      "library": {
+        "unitTestRunner": "none"
+      }
+    }
+  }
 }
